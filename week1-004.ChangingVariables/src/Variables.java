@@ -3,9 +3,9 @@ public class Variables {
     public static void main(String[] args) {
         // CHANGE THESE:
 
-        int chickenCount = 3;
-        double baconWeight = 5.5;
-        String tractor = "There is none";
+        int chickenCount = 9000;
+        double baconWeight = 0.1;
+        String tractor = "Zetor";
 
         // DO NOT TOUCH THE BELOW:
 
