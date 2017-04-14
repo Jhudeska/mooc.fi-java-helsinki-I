@@ -9,15 +9,19 @@ public class Password {
 
         String userPass;
         
-        // Get input
-        System.out.print("Type the password: ");
-        userPass = reader.nextLine();
-        
-        // Check if right password
-        if (userPass.equals(password)) {
-            System.out.println("Right!");
-        } else {
-            System.out.println("Wrong!");
+        // Get input until password is right
+        while (true) {
+            // Get input
+            System.out.print("Type the password: ");
+            userPass = reader.nextLine();
+
+            // Check if right password
+            if (userPass.equals(password)) {
+                System.out.println("Right!");
+                break;
+            } else {
+                System.out.println("Wrong!");
+            }
         }
     }
 }
