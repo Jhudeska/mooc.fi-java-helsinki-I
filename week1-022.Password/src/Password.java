@@ -18,6 +18,7 @@ public class Password {
             // Check if right password
             if (userPass.equals(password)) {
                 System.out.println("Right!");
+                System.out.println("The secret is: Hi!");
                 break;
             } else {
                 System.out.println("Wrong!");
