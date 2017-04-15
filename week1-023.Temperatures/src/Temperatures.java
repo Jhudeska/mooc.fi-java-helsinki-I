@@ -14,7 +14,7 @@ public class Temperatures {
             // Get number from input
             temperature = Double.parseDouble(reader.nextLine());
          
-            if (temperature >= 30 && temperature <=40) {
+            if (temperature >= -30 && temperature <=40) {
                 Graph.addNumber(temperature);
         
             }
