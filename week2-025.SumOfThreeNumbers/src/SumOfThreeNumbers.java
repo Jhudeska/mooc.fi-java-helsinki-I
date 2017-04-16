@@ -12,12 +12,15 @@ public class SumOfThreeNumbers {
         // Get numbers from user and add to sum
         System.out.print("Type the first number: ");
         read = Integer.parseInt(reader.nextLine());
+        sum += read;
         
         System.out.print("Type the second number: ");
         read = Integer.parseInt(reader.nextLine());
+        sum += read;
         
         System.out.print("Type the third number: ");
         read = Integer.parseInt(reader.nextLine());
+        sum += read;
 
         // Display sum
         System.out.println("Sum: " + sum);
