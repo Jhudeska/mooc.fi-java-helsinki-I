@@ -9,9 +9,17 @@ public class SumOfThreeNumbers {
         int read; // store numbers read form user in this variable
 
 
-        // Write your program here
-        // Use only variables sum and read
+        // Get numbers from user and add to sum
+        System.out.print("Type the first number: ");
+        read = Integer.parseInt(reader.nextLine());
+        
+        System.out.print("Type the second number: ");
+        read = Integer.parseInt(reader.nextLine());
+        
+        System.out.print("Type the third number: ");
+        read = Integer.parseInt(reader.nextLine());
 
+        // Display sum
         System.out.println("Sum: " + sum);
     }
 }
