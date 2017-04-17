@@ -7,7 +7,11 @@ public class UpToCertainNumber {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         
-        // Write your code here
+        // Declare variables
+        
+        // Get upper limit from input
+        
+        // Print whole numbers from 1 up to given number
         
     }
 }
