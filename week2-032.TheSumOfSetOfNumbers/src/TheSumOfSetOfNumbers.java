@@ -22,5 +22,8 @@ public class TheSumOfSetOfNumbers {
             sum += i;
             i++;
         }
+        
+        // Display sum
+        System.out.println("Sum is " + sum);
     }
 }
