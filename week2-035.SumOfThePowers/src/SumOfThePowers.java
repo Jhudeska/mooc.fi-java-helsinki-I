@@ -14,7 +14,12 @@ public class SumOfThePowers {
         power = Integer.parseInt(reader.nextLine());
         
         // Calculate sum of powers
-        sum = (int)Math.pow(2, power);
+        int i = 0;
+        sum = 0;
+        while (i <= power) {
+            sum += (int)Math.pow(2, i);
+            i++;
+        }
         
         // Display result
         System.out.println("The result is " + sum);
