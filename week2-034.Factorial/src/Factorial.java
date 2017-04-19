@@ -9,7 +9,7 @@ public class Factorial {
         
         // Initialize variables
         i = 1;
-        factorial = 0;
+        factorial = 1;
         
         // Get number from input
         System.out.print("Type a number: ");
@@ -18,6 +18,7 @@ public class Factorial {
         // Calculate factorial
         while (i <= inputNum) {
             factorial *= i;
+            i++;
         }
         
         if (inputNum == 0) {
