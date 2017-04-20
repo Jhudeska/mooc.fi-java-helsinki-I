@@ -9,14 +9,17 @@ public class LoopsEndingRemembering {
 
         // Declare variables
         int num = 0;
+        int sum = 0;
         
         // Get input
         while (num != -1) {
+            sum += num;
             System.out.print("Type numbers: ");
             num = Integer.parseInt(reader.nextLine());
         }
         
-        // End
+        // Display results
         System.out.println("Thank you and see you later!");
+        System.out.println("The sum is " + sum);
     }
 }
