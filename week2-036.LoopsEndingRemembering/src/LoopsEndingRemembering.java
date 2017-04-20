@@ -7,5 +7,16 @@ public class LoopsEndingRemembering {
         
         Scanner reader = new Scanner(System.in);
 
+        // Declare variables
+        int num = 0;
+        
+        // Get input
+        while (num != -1) {
+            System.out.print("Type numbers: ");
+            num = Integer.parseInt(reader.nextLine());
+        }
+        
+        // End
+        System.out.println("Thank you and see you later!");
     }
 }
