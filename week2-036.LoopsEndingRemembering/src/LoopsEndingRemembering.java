@@ -11,6 +11,7 @@ public class LoopsEndingRemembering {
         int num = 0;
         int sum = 0;
         int count = 0;
+        double average = 0;
         
         // Get input
         System.out.print("Type numbers: ");
@@ -22,9 +23,12 @@ public class LoopsEndingRemembering {
             num = Integer.parseInt(reader.nextLine());
         }
         
+        average = (double) sum / count;
+        
         // Display results
         System.out.println("Thank you and see you later!");
         System.out.println("The sum is " + sum);
         System.out.println("How many numbers: " + count);
+        System.out.println("Average: " + average);
     }
 }
