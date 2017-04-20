@@ -11,6 +11,8 @@ public class LoopsEndingRemembering {
         int num = 0;
         int sum = 0;
         int count = 0;
+        int oddCount = 0;
+        int evenCount = 0;
         double average = 0;
         
         // Get input
@@ -18,6 +20,11 @@ public class LoopsEndingRemembering {
         num = Integer.parseInt(reader.nextLine());
         while (num != -1) {
             sum += num;
+            if (num % 2 ==0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
             count++;
             System.out.print("Type numbers: ");
             num = Integer.parseInt(reader.nextLine());
@@ -30,5 +37,7 @@ public class LoopsEndingRemembering {
         System.out.println("The sum is " + sum);
         System.out.println("How many numbers: " + count);
         System.out.println("Average: " + average);
+        System.out.println("Even numbers: " + evenCount);
+        System.out.println("Odd numbers: " + oddCount);
     }
 }
