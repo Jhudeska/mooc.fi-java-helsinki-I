@@ -27,6 +27,12 @@ public class Printing {
 
     public static void printRectangle(int width, int height) {
         // 39.3
+        int i = 0;
+        
+        while (i < height) {
+            printStars(width);
+            i++;
+        }
     }
 
     public static void printTriangle(int size) {
