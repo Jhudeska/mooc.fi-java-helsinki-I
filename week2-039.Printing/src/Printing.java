@@ -4,7 +4,15 @@ public class Printing {
         // 39.1
         // you can print one star with the command
         // System.out.print("*");
-        // call this command amount times        
+        // call this command amount times 
+        int i = 0;
+        
+        while (i < amount) {
+            System.out.print("*");
+            i++;
+        }
+        
+        System.out.println("");
     }
 
     public static void printSquare(int sideSize) {
