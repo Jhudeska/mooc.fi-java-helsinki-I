@@ -37,6 +37,12 @@ public class Printing {
 
     public static void printTriangle(int size) {
         // 39.4
+        int i = 0;
+        
+        while (i < size) {
+            printStars(i + 1);
+            i++;
+        }
     }
 
     public static void main(String[] args) {
