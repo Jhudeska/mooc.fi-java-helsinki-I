@@ -17,6 +17,12 @@ public class Printing {
 
     public static void printSquare(int sideSize) {
         // 39.2
+        int i = 0;
+        
+        while (i < sideSize) {
+            printStars(sideSize);
+            i++;
+        }
     }
 
     public static void printRectangle(int width, int height) {
