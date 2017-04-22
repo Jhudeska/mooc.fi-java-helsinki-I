@@ -2,10 +2,24 @@ public class PrintingLikeBoss {
 
     // copy or rewrite the method of Assignment 39.1 here
     public static void printStars(int amount) {
+        int i = 0;
+        
+        while (i < amount) {
+            System.out.print("*");
+            i++;
+        }
+        
+        System.out.println("");
     }
 
     public static void printWhitespaces(int amount) {
         // 40.1
+        int i = 0;
+        
+        while (i < amount) {
+            System.out.print(" ");
+            i++;
+        }
     }
 
     public static void printTriangle(int size) {
