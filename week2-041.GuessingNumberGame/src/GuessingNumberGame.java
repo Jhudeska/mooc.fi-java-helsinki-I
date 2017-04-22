@@ -15,13 +15,17 @@ public class GuessingNumberGame {
         System.out.print("Guess a number: ");
         guess = Integer.parseInt(reader.nextLine());
         
-        if (guess > numberDrawn) {
-            System.out.println("The number is lesser");
-        } else if (guess < numberDrawn) {
-            System.out.println("The number is greater");
-        } else {
-            System.out.println("Congratulations, your guess is correct!");
+        while (guess != numberDrawn) {
+            if (guess > numberDrawn) {
+                System.out.println("The number is lesser");
+            } else if (guess < numberDrawn) {
+                System.out.println("The number is greater");
+            }
+            System.out.print("Guess a number: ");
+            guess = Integer.parseInt(reader.nextLine());
         }
+        
+        System.out.println("Congratulations, your guess is correct!");
         
     }
 
