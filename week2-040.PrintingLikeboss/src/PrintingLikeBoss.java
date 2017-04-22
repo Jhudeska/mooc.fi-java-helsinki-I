@@ -24,6 +24,15 @@ public class PrintingLikeBoss {
 
     public static void printTriangle(int size) {
         // 40.2
+        int i = 1;
+        int j = size - 1;
+        
+        while (i <= size) {
+            printWhitespaces(j);
+            j--;
+            printStars(i);
+            i++;
+        }
     }
 
     public static void xmasTree(int height) {
