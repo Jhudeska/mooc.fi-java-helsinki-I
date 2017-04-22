@@ -9,6 +9,19 @@ public class GuessingNumberGame {
         int numberDrawn = drawNumber();
 
         // program your solution here. Do not touch the above lines!
+        int guess;
+        
+        // Get guess from input
+        System.out.print("Guess a number: ");
+        guess = Integer.parseInt(reader.nextLine());
+        
+        if (guess > numberDrawn) {
+            System.out.println("The number is lesser");
+        } else if (guess < numberDrawn) {
+            System.out.println("The number is greater");
+        } else {
+            System.out.println("Congratulations, your guess is correct!");
+        }
         
     }
 
