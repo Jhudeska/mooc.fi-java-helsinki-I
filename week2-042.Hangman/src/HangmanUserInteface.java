@@ -31,6 +31,9 @@ public class HangmanUserInteface {
             } else if (command.isEmpty()) {
                 printMenu();
             }
+            
+            hangman.printMan();
+            hangman.printWord();
         }
 
 
