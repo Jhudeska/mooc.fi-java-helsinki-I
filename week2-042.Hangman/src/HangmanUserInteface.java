@@ -28,6 +28,8 @@ public class HangmanUserInteface {
                 hangman.printStatus();
             } else if (command.length() == 1) {
                 hangman.guess(command);
+            } else if (command.isEmpty()) {
+                printMenu();
             }
         }
 
