@@ -26,6 +26,8 @@ public class HangmanUserInteface {
                 break;
             } else if (command.equals("status")) {
                 hangman.printStatus();
+            } else if (command.length() == 1) {
+                hangman.guess(command);
             }
         }
 
