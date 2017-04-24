@@ -24,6 +24,8 @@ public class HangmanUserInteface {
             
             if (command.equals("quit")) {
                 break;
+            } else if (command.equals("status")) {
+                hangman.printStatus();
             }
         }
 
