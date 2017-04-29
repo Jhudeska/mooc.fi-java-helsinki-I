@@ -10,7 +10,8 @@ public class ReversingName {
         System.out.print("In reverse order: ");
         int i = name.length() - 1;
         while (i >= 0) {
-            
+            System.out.print(name.charAt(i));
+            i--;
         }
     }
 }
