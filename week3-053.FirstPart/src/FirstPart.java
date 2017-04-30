@@ -12,6 +12,6 @@ public class FirstPart {
         System.out.print("Length of the first part: ");
         int length = Integer.parseInt(reader.nextLine());
         
-        System.out.println(word.substring(0, length));
+        System.out.println("Result: " + word.substring(0, length));
     }
 }
