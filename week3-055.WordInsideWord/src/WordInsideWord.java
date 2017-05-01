@@ -15,6 +15,7 @@ public class WordInsideWord {
         System.out.print("Type the second word: ");
         word2 = reader.nextLine();
         
+        // Get index (-1 if word2 is not found in word1)
         index = word1.indexOf(word2);
         
         if (index != -1) {
