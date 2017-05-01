@@ -10,7 +10,8 @@ public class WordInsideWord {
         
         // Get words from input
         System.out.print("Type the first word: ");
-        
+        word1 = reader.nextLine();
         System.out.print("Type the second word: ");
+        word2 = reader.nextLine();
     }
 }
