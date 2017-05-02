@@ -5,8 +5,15 @@ public class ReversingText {
 
     public static String reverse(String text) {
         // write your code here
-        // note that method does now print anything, it RETURNS the reversed string
-        return "";
+        // note that method does not print anything, it RETURNS the reversed string
+        String helper = "";
+        int i = text.length() - 1;
+        
+        while (i >= 0) {
+            // add letter to 'helper'
+        }
+        
+        return helper;
     }
 
     public static void main(String[] args) {
