@@ -11,6 +11,7 @@ public class ReversingText {
         
         while (i >= 0) {
             helper += text.charAt(i);
+            i++;
         }
         
         return helper;
