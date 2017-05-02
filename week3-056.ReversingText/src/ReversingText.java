@@ -10,7 +10,7 @@ public class ReversingText {
         int i = text.length() - 1;
         
         while (i >= 0) {
-            // add letter to 'helper'
+            helper += text.charAt(i);
         }
         
         return helper;
