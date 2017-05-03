@@ -12,12 +12,18 @@ public class Words {
         System.out.print("Type a word: ");
         word = reader.nextLine();
         
+        // Add words to arraylist
         while (!(word.isEmpty())) {
             words.add(word);
             System.out.print("Type a word: ");
             word = reader.nextLine();
         }
         
-        // Print each word in 'words'
+        // Display words in arraylist
+        System.out.println("You type the following words:");
+        while (i < words.size()) {
+            System.out.println(words.get(i));
+            i++;
+        }
     }
 }
