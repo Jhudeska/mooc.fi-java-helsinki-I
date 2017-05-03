@@ -21,9 +21,14 @@ public class Words {
         
         // Display words in arraylist
         System.out.println("You type the following words:");
+        /*
         while (i < words.size()) {
             System.out.println(words.get(i));
             i++;
+        }
+        */
+        for (String w : words) {
+            System.out.println(w);
         }
     }
 }
