@@ -13,8 +13,9 @@ public class Words {
         word = reader.nextLine();
         
         while (!(word.isEmpty())) {
-            // Add word to 'words' arraylist
-            // Get next word from input
+            words.add(word);
+            System.out.print("Type a word: ");
+            word = reader.nextLine();
         }
         
         // Print each word in 'words'
