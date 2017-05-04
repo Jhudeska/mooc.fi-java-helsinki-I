@@ -10,7 +10,8 @@ public class RecurringWord {
         ArrayList<String> words = new ArrayList<String>();
         
         while (true) {
-            // get input
+            System.out.print("Type a word: ");
+            String input = reader.nextLine();
             // see if input is found in arraylist
                 // if yes, break
         }
