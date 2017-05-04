@@ -64,5 +64,22 @@ deps-jar:
 -compile-depend:
 
 -do-compile:
-    [javac] Compiling 1 source file to /home/kwln/NetBeansProjects/2013-OOProgrammingWithJava-PART1/week3-057.Words/build/classes
-    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+
+-post-compile:
+
+compile:
+
+-pre-pre-compile-test:
+
+-pre-compile-test:
+
+-compile-test-depend:
+
+-do-compile-test:
+
+-post-compile-test:
+
+compile-test:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
