@@ -7,16 +7,16 @@ public class WordsInReverseOrder {
         Scanner reader = new Scanner(System.in);
         // create here an ArrayList
         ArrayList<String> words = new ArrayList<String>();
-        String word;
+        String input;
         
         // Get input
         while (true) {
             System.out.print("Type a word: ");
-            word = reader.nextLine();
-            if (word.isEmpty()) {
+            input = reader.nextLine();
+            if (input.isEmpty()) {
                 break;
             }
-            words.add(word);
+            words.add(input);
         }
         
         // Reverse arraylist
@@ -24,6 +24,8 @@ public class WordsInReverseOrder {
         
         // Print reversed arraylist
         System.out.println("You typed the following words: ");
-        
+        for (String word : words) {
+            System.out.println(word);
+        }
     }
 }
