@@ -13,6 +13,9 @@ public class WordsInReverseOrder {
         while (true) {
             System.out.print("Type a word: ");
             word = reader.nextLine();
+            if (word.isEmpty()) {
+                break;
+            }
         }
         
         // reverse arraylist
