@@ -16,10 +16,14 @@ public class WordsInReverseOrder {
             if (word.isEmpty()) {
                 break;
             }
+            words.add(word);
         }
         
-        // reverse arraylist
+        // Reverse arraylist
+        Collections.reverse(words);
         
-        // print reversed arraylist
+        // Print reversed arraylist
+        System.out.println("You typed the following words: ");
+        
     }
 }
