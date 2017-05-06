@@ -25,6 +25,9 @@ public class WordsInAlphabeticalOrder {
         Collections.sort(words);
         
         // print contents of arraylist
-        
+        System.out.println("You typed the following words: ");
+        for (String word : words) {
+            System.out.println(word);
+        }
     }
 }
