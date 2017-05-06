@@ -22,7 +22,9 @@ public class WordsInAlphabeticalOrder {
         }
         
         // sort arraylist
+        Collections.sort(words);
         
         // print contents of arraylist
+        
     }
 }
