@@ -12,6 +12,14 @@ public class WordsInAlphabeticalOrder {
         String input;
         
         // get input
+        while (true) {
+            System.out.print("Type a word: ");
+            input = reader.nextLine();
+            if (input.isEmpty()) {
+                break;
+            }
+            words.add(input);
+        }
         
         // sort arraylist
         
