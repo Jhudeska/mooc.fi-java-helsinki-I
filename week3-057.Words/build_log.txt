@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 -pre-init:
 
@@ -85,6 +86,8 @@ compile-test:
 BUILD SUCCESSFUL
 Total time: 0 seconds
 =======
+=======
+>>>>>>> 878abd00adfbb5ebc92ac02842c431202e90a90a
 
 -pre-init:
 
@@ -170,4 +173,7 @@ compile-test:
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 878abd00adfbb5ebc92ac02842c431202e90a90a

@@ -9,7 +9,10 @@ public class WordsInAlphabeticalOrder {
         Scanner reader = new Scanner(System.in);
         // create here an ArrayList
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 878abd00adfbb5ebc92ac02842c431202e90a90a
         ArrayList<String> words = new ArrayList<String>();
         String input;
         
@@ -31,6 +34,9 @@ public class WordsInAlphabeticalOrder {
         for (String word : words) {
             System.out.println(word);
         }
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 878abd00adfbb5ebc92ac02842c431202e90a90a
     }
 }
