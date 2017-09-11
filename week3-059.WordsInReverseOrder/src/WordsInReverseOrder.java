@@ -6,35 +6,26 @@ public class WordsInReverseOrder {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         // create here an ArrayList
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 878abd00adfbb5ebc92ac02842c431202e90a90a
         ArrayList<String> words = new ArrayList<String>();
-        String input;
         
-        // Get input
-        while (true) {
+        // Get words from input
+        System.out.print("Type a word: ");
+        String input = reader.nextLine();
+        
+        while (!input.isEmpty()) {
+            words.add(input);
+            // Get new input
             System.out.print("Type a word: ");
             input = reader.nextLine();
-            if (input.isEmpty()) {
-                break;
-            }
-            words.add(input);
         }
         
-        // Reverse arraylist
+        // Reverse words in ArrayList
         Collections.reverse(words);
         
-        // Print reversed arraylist
+        // Display words in reverse order
         System.out.println("You typed the following words: ");
         for (String word : words) {
             System.out.println(word);
         }
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> 878abd00adfbb5ebc92ac02842c431202e90a90a
     }
 }
