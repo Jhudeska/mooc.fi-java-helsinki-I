@@ -1,7 +1,7 @@
 public class Counter {
     private int counterValue;
     private boolean check;
-    
+
     public Counter(int startingValue, boolean check) {
         this.counterValue = startingValue;
         this.check = check;
