@@ -3,14 +3,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        // Write test code here
-        // Remember to remove all the extra code when doing assignments  79.3 and 79.4
-
-        // Define three NumberStatistics objects in your program:
-        // The first is used to track the sum of all given numbers.
-        // The second takes care of even numbers and the third the odd numbers.
-
-        // The tests does not work if you do not create the objects in the correct order
-
+        
+        NumberStatistics nsSum = new NumberStatistics();
+        NumberStatistics nsEven = new NumberStatistics();
+        NumberStatistics nsOdd = new NumberStatistics();
+        
+        System.out.println("Type numbers:");
+        int inputNum = reader.nextInt();
+        while (inputNum != -1) {
+            nsSum.addNumber(inputNum);
+            if (inputNum % 2 == 0) {
+                nsEven.addNumber(inputNum);
+            } else {
+                nsOdd.addNumber(inputNum);
+            }
+            inputNum = reader.nextInt();
+        }
+        
+        System.out.println("sum: " + nsSum.sum());
+        System.out.println("sum of even: " + nsEven.sum());
+        System.out.println("sum of odd: " + nsOdd.sum());
     }
 }
