@@ -30,38 +30,25 @@ public class MyDate {
         return false;
     }
     
-    public int getDay() {
-        return day;
-    }
-    
-    public int getMonth() {
-        return month;
-    }
-    
-    public int getYear() {
-        return year;
-    }
-    
     public int differenceInYears(MyDate comparedDate) {
         int diff;
         if (!earlier(comparedDate)) {
-            diff = getYear() - comparedDate.getYear();
-            if (getMonth() < comparedDate.getMonth()) {
+            diff = this.year - comparedDate.year;
+            if (this.month < comparedDate.month) {
                 return diff - 1;
-            } else if (getMonth() == comparedDate.getMonth()) {
-                return getDay() < comparedDate.getDay() ? diff - 1 : diff;
+            } else if (this.month == comparedDate.month) {
+                return this.day < comparedDate.day ? diff - 1 : diff;
             }
             return diff;
         } else {
-            diff = comparedDate.getYear() - getYear();
-            if (comparedDate.getMonth() < getMonth()) {
+            diff = comparedDate.year - this.year;
+            if (comparedDate.month < this.month) {
                 return diff - 1;
-            } else if (comparedDate.getMonth() == getMonth()) {
-                return comparedDate.getDay() < getDay() ? diff - 1 : diff;
+            } else if (comparedDate.month == this.month) {
+                return comparedDate.day < this.day ? diff - 1 : diff;
             }
             return diff;
         }
     }
-
 
 }
