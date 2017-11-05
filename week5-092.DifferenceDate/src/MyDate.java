@@ -3,9 +3,9 @@ public class MyDate {
     private int month;
     private int year;
 
-    public MyDate(int day, int montd, int year) {
+    public MyDate(int day, int month, int year) {
         this.day = day;
-        this.month = montd;
+        this.month = month;
         this.year = year;
     }
 
@@ -29,5 +29,39 @@ public class MyDate {
 
         return false;
     }
+    
+    public int getDay() {
+        return day;
+    }
+    
+    public int getMonth() {
+        return month;
+    }
+    
+    public int getYear() {
+        return year;
+    }
+    
+    public int differenceInYears(MyDate comparedDate) {
+        int diff;
+        if (!earlier(comparedDate)) {
+            diff = getYear() - comparedDate.getYear();
+            if (getMonth() < comparedDate.getMonth()) {
+                return diff - 1;
+            } else if (getMonth() == comparedDate.getMonth()) {
+                return getDay() < comparedDate.getDay() ? diff - 1 : diff;
+            }
+            return diff;
+        } else {
+            diff = comparedDate.getYear() - getYear();
+            if (comparedDate.getMonth() < getMonth()) {
+                return diff - 1;
+            } else if (comparedDate.getMonth() == getMonth()) {
+                return comparedDate.getDay() < getDay() ? diff - 1 : diff;
+            }
+            return diff;
+        }
+    }
+
 
 }
