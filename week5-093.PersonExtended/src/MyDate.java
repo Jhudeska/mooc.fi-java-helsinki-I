@@ -37,7 +37,24 @@ public class MyDate {
      * Copy the method here since it eases this assignment considerably.
      */
     public int differneceInYears(MyDate compared) {
-        return -99;
+        int diff;
+        if (!earlier(compared)) {
+            diff = this.year - compared.year;
+            if (this.month < compared.month) {
+                return diff - 1;
+            } else if (this.month == compared.month) {
+                return this.day < compared.day ? diff - 1 : diff;
+            }
+            return diff;
+        } else {
+            diff = compared.year - this.year;
+            if (compared.month < this.month) {
+                return diff - 1;
+            } else if (compared.month == this.month) {
+                return compared.day < this.day ? diff - 1 : diff;
+            }
+            return diff;
+        }
     }
 
   
